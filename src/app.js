@@ -9,7 +9,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "http://localhost:8080/api/v1/url/url-shortner",
+      "http://localhost:8080/",
       "https://url-shortner-psi-five.vercel.app/",
     ],
   }),
