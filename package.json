@@ -18,7 +18,8 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mongoose": "^9.6.3",
-    "nanoid": "^5.1.11"
+    "nanoid": "^5.1.11",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "concurrently": "^9.2.1",
