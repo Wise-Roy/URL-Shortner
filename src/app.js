@@ -6,7 +6,14 @@ import { ApiError } from "./utils/ApiError.js";
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:8080/api/v1/url/url-shortner",
+      "https://url-shortner-psi-five.vercel.app/",
+    ],
+  }),
+);
 app.use(express.json({ limit: "1mb" }));
 
 app.use("/api/v1/url", urlRouter);
