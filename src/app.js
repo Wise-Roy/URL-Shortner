@@ -8,10 +8,8 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:8080/",
-      "https://url-shortner-psi-five.vercel.app/",
-    ],
+    origin: 
+      "https://url-shortner-psi-five.vercel.app",
   }),
 );
 app.use(express.json({ limit: "1mb" }));
